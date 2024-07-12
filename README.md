@@ -38,6 +38,17 @@ Run the first batch script to install SQL Server 2019 Express.
 This script will execute install-SQL-1.ps1 to install SQL Server 2019 Express using SQL2019-SSEI-Expr.exe.
 
 ### Step 2: Install SQL Server Instance
+Before running the second batch script, make sure to edit the script to specify your domain, user, and password.
+
+Open instance-ebp-2.ps1 and modify the following lines:
+```
+# Define credentials and instance details
+$instanceName = "EBP"
+$sqlSvcAccount = "YourDomain\\DomainAdminUser"
+$sqlSvcPassword = "YourPASSWRD"
+$saPassword = "YourPASSWRD"
+```
+Replace YourDomain, DomainAdminUser, and YourPASSWRD with your actual domain, user, and password.
 
 Run the second batch script to configure the SQL Server instance.
 ```
