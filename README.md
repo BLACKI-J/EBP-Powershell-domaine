@@ -13,6 +13,7 @@ This repository contains scripts to automate the installation of SQL Server 2019
   - `instance-ebp-2.ps1`
   - `install-EBP-3.ps1`
   - `SQL2019-SSEI-Expr.exe`
+  - `licence.xml`
   - The EBP application's executables:
   In my case i have all this apps to install. if you have more or less you can change it, in the script 
     - `EBP_2024_Comptabilite_ELITE_23_6_0_11594.exe`
