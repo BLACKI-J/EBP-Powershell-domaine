@@ -32,8 +32,9 @@ Run the first batch script to install SQL Server 2019 Express.
 
 ```
 .\1-install.bat
-This script will execute install-SQL-1.ps1 to install SQL Server 2019 Express using SQL2019-SSEI-Expr.exe.
 ```
+This script will execute install-SQL-1.ps1 to install SQL Server 2019 Express using SQL2019-SSEI-Expr.exe.
+
 ### Step 2: Install SQL Server Instance
 
 Run the second batch script to configure the SQL Server instance.
