@@ -13,7 +13,8 @@ This repository contains scripts to automate the installation of SQL Server 2019
   - `instance-ebp-2.ps1`
   - `install-EBP-3.ps1`
   - `SQL2019-SSEI-Expr.exe`
-  - The 7 EBP application executables:
+  - The EBP application's executables:
+  In my case i have all this apps to install. if you have more or less you can change it, in the script 
     - `EBP_2024_Comptabilite_ELITE_23_6_0_11594.exe`
     - `EBP_2024_Etats_Financiers_PRO_23_3_0_4261.exe`
     - `EBP_2024_Gestion_ELITE_23_1_1_9182.exe`
@@ -51,6 +52,15 @@ Run the third batch script to install all 7 EBP applications.
 ```
 This script will execute install-EBP-3.ps1 to sequentially install each EBP application and confirm successful installation.
 
+License Activation
+
+To avoid having to activate each workstation one by one, you need a License.xml file. This file is generated automatically after the first activation and can be found in the directory C:\ProgramData\EBP.
+
+	1.	Install the PGI manually on a machine connected to or disconnected from the network.
+	2.	Activate the PGI (all modules).
+	3.	Retrieve the License.xml file from C:\ProgramData\EBP.
+	4.	Place the License.xml file in the same directory as the EBP scripts.
+ 
 Notes
 
 	•	Make sure to run each script in the correct order: 1-install.bat, 2-instance.bat, and 3-ebp.bat.
