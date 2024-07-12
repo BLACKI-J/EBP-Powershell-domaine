@@ -3,9 +3,9 @@ $instanceSetupPath = "C:\SQL2019\Express_FRA\SETUP.EXE"
 
 # Define credentials and instance details
 $instanceName = "EBP"
-$sqlSvcAccount = "STEPHENSON\ebp"
-$sqlSvcPassword = "d&kD#ytsp?kETGzX6jix"
-$saPassword = "d&kD#ytsp?kETGzX6jix"
+$sqlSvcAccount = "YourDomaine\DomainAdminUser"
+$sqlSvcPassword = "YourPASSWRD"
+$saPassword = "YourPASSWRD"
 
 # Log file
 $logFile = "create_instance_log.txt"
